@@ -12,9 +12,15 @@ npm run build && npm start
 - Colors and fonts: `tailwind.config.js`, `src/app/layout.jsx`
 
 
-magick public/images/sliders/slider1.jpg \
+magick public/shopimgs/dom_cam.avif \
   -resize '1200x800>' \
   -strip -quality 80 \
-  public/images/sliders/slider1.webp
+  public/shopimgs/dom_cam.webp
 
 
+ffmpeg -i public/videos/promox.mp4 \
+  -vf "scale='min(1280,iw)':-2,fps=30" \
+  -c:v libx264 -crf 28 -preset medium \
+  -pix_fmt yuv420p \
+  -an -movflags +faststart \
+  public/videos/promo.mp4

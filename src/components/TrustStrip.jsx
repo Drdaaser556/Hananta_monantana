@@ -1,18 +1,47 @@
-const ITEMS = [
-  ['Fast delivery', 'Early shipping on every order'],
-  ['Support 24/7', 'Online, every day'],
-  ['7-day money back', 'Return guarantee'],
-  ['Service comes first', 'Install, repair and upgrade'],
+import {
+  FaTruckFast,
+  FaHeadset,
+  FaRotateLeft,
+  FaScrewdriverWrench,
+} from 'react-icons/fa6';
+
+const features = [
+  {
+    icon: FaTruckFast,
+    title: 'Fast delivery',
+    description: 'Early shipping on every order',
+  },
+  {
+    icon: FaHeadset,
+    title: 'Support 24/7',
+    description: 'Online, every day',
+  },
+  {
+    icon: FaRotateLeft,
+    title: '7-day money back',
+    description: 'Return guarantee',
+  },
+  {
+    icon: FaScrewdriverWrench,
+    title: 'Service comes first',
+    description: 'Install, repair and upgrade',
+  },
 ];
 
 export default function TrustStrip() {
   return (
-    <div className="border-y border-line bg-paper">
-      <div className="wrap grid grid-cols-2 gap-4 py-4 text-[.92rem] md:grid-cols-4">
-        {ITEMS.map(([t, d]) => (
-          <div key={t}><b className="block font-display">{t}</b>{d}</div>
+    <section className="border-y border-line bg-paper py-5">
+      <div className="wrap grid grid-cols-2 gap-5 md:grid-cols-4">
+        {features.map(({ icon: Icon, title, description }) => (
+          <div key={title} className="flex items-center gap-4">
+            <Icon className="shrink-0 text-2xl text-cable" />
+            <div>
+              <h3 className="font-bold text-ink">{title}</h3>
+              <p className="text-sm text-mut">{description}</p>
+            </div>
+          </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

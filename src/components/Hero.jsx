@@ -1,4 +1,4 @@
-import Rack from './Rack';
+import Rack from "./Rack";
 
 export default function Hero() {
   return (
@@ -9,11 +9,17 @@ export default function Hero() {
             Cameras, servers and networks. Installed right, kept running.
           </h1>
           <p className="mb-7 mt-5 max-w-[46ch] text-[1.1rem] text-mut">
-            We supply, install and support IT and security systems for offices, shops and homes from Laboratory Road,
-            Dhaka. Up to 15% off complete IT infrastructure setup.
+            We supply, install and support IT and security systems for offices,
+            shops and homes from Laboratory Road, Dhaka. Up to 15% off complete
+            IT infrastructure setup.
           </p>
-          <a href="#shop" className="btn">Shop equipment</a>
-          <a href="#survey" className="ml-2.5 inline-block rounded-md border-2 border-ink px-5 py-[11px] font-medium">
+          <a href="#shop" className="btn hover:text-ink">
+            Shop equipment
+          </a>
+          <a
+            href="#survey"
+            className="ml-2.5 inline-block rounded-md border-2 border-ink px-5 py-[11px] font-medium hover:bg-cable"
+          >
             Book a site survey
           </a>
         </div>

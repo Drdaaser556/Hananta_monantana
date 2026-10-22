@@ -10,7 +10,7 @@ const slides = [
       "Smart surveillance and reliable security solutions for homes and businesses.",
   },
   {
-    image: "/hello_ecomm2/images/sliders/slider2.jpg",
+    image: "/hello_ecomm2/images/sliders/slider8.webp",
     title: "Servers & Networking",
     description:
       "Professional server setup, structured cabling and network infrastructure.",
