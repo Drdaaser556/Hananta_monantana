@@ -12,9 +12,12 @@ const display = Bricolage_Grotesque({ subsets: ['latin'], weight: ['500', '800']
 const body = IBM_Plex_Sans({ subsets: ['latin'], weight: ['400', '500'], variable: '--font-body' });
 
 export const metadata = {
-  title: 'PC Club BD — CCTV, servers, networking and IT support in Dhaka',
+  title: 'PC Club — CCTV, servers, networking and IT support in Dhaka',
   description:
     'Supply, installation and support for CCTV, IP cameras, servers, networking, biometric attendance and access control. Laboratory Road, Dhaka.',
+    icons: {
+    icon: '/hello_ecomm2/favicon.ico',
+  },
 };
 
 export default function RootLayout({ children }) {
