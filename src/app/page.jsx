@@ -1,4 +1,5 @@
 import Hero from '@/components/Hero';
+import HeroSlider from '@/components/HeroSlider';
 import TrustStrip from '@/components/TrustStrip';
 import Shop from '@/components/Shop';
 import Services from '@/components/Services';
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <HeroSlider />
       <TrustStrip />
       <Shop />
       <Services />

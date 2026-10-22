@@ -16,7 +16,7 @@ export default function ProductCard({ p }) {
           {money(p.p)}
           {p.o && <s className="font-body text-[.85rem] font-normal text-mut">{money(p.o)}</s>}
         </div>
-        <button onClick={() => add(p)} className="rounded-md bg-ink p-2.5 font-medium text-white hover:bg-cable">
+        <button onClick={() => add(p)} className="rounded-md bg-cable p-2.5 font-medium text-white hover:bg-ink">
           Add to cart
         </button>
       </div>

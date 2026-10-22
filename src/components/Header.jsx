@@ -37,10 +37,10 @@ export default function Header() {
         <button
           onClick={() => setOpen(true)}
           aria-label="Open cart"
-          className="ml-auto flex items-center gap-2 rounded-md bg-ink px-4 py-2 font-medium text-white md:ml-0"
+          className="ml-auto flex items-center gap-2 rounded-md bg-cable px-4 py-2 font-medium text-white md:ml-0"
         >
-          Cart{" "}
-          <b className="rounded-full bg-cable px-2 text-[.8rem]">{count}</b>
+          <span>Cart</span>
+          <b className="rounded-full px-2 text-ink bg-white text-[.8rem]">{count}</b>
         </button>
       </div>
     </header>
