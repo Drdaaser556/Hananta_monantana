@@ -2,7 +2,7 @@ export const SITE = {
   name: 'PC Club BD',
   phone: '+880 1713-027242',
   tel: '+8801713027242',
-  wa: '8801713027242',
+  wa: '8801678092092',
   support: 'support@pcclubbd.com',
   mona: 'mona@pcclubbd.com',
   pbx: '+880 9611-727272 (Ext 100)',
