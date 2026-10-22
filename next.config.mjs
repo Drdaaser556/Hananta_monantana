@@ -1,10 +1,10 @@
+
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  basePath: '/hello_ecomm2',
   images: {
     unoptimized: true,
-    remotePatterns: [
-      { protocol: 'https', hostname: 'placehold.co' },
-    ],
   },
 };
 
